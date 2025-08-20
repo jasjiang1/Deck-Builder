@@ -1,14 +1,33 @@
 # Deck-Builder
-Made using Mongo, Express, React and Node in Javascript, CSS, and HTML
+A full-stack web application for creating, saving, and sharing custom card decks. Built with **MongoDB**, **Express**, **React**, and **Node.js**.
 
-# To Run
-Set up a MongoDB database and replace the connection link in server -> src -> index.js with your own. Then create two terminals, and change their directories: one to "server" and another to "client". Run "npm start" on both. This will launch the application in "localhost:3000".
+---
 
-# To Use
-Make an account with a username and password, then login with the account with the "Login/Register" option. This will take you to the "Home" page, where all decks are displayed. This is initially empty.
+## User Flow
 
-# Create a Deck
-First, click "Create Card". Create a card by providing its name, and an image url. All cards are displayed on a list to the right, and hovering over a card displays its name on the bottom. After creating cards, click "Create Deck". Input a deck name and any notes to go along with the deck. To add cards into the deck, click on a card on a list on the right. To remove a card, click on the card while in the list on the left.
+### Registration & Login
+- Create an account with a username and password
+- Log in via the **Login/Register** option to access the Home page
 
-# Saving a Deck
-After creating a deck, it will show you to the "Home" page, which will display your deck's name, the creator's name, the list of cards in the deck, and any notes provided. There is also a "Save" button on each deck. Pressing it saves it to the user. These decks can be seen in the "Saved Decks" tab. All users can see and save decks from any other users while on the "Home" page.
+### Creating Cards
+- Click **Create Card** in upper hotbar
+- Provide a card name and image URL
+
+### Building Decks
+- Click **Create Deck** in upper hotbar
+- Enter a deck name, and add cards by clicking them via a list on the right - hover over a card to preview its name
+- Remove cards by clicking them via a list on the left
+
+### Saving and Sharing
+- After deck creation, return to the Home page
+- View deck details: Deck Name, Creator, Cards and other notes
+- Click **Save** to store the deck under your account
+- Browse saved decks via the **Saved Decks** on the upper hotbar
+
+---
+
+## Tech Stack
+- **Frontend**: React, CSS, HTML
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+
